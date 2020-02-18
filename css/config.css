@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap');
+
+:root {
+	--thin: 100;
+    --extra-light: 200;
+    --light: 300;
+    --regular: 400;
+    --medium: 500;
+    --semi-bold: 600;
+    --bold: 700;
+    --extra-bold: 800;
+
+
+    --redColor: #EE3D48;
+    --orangeColor: #FFA96B;
+    --yellowColor: #EEE8A9;
+    --greenColor: #47817E;
+    --darkGreenColorOne: #164845;
+    --darkGreenColorTwo: #156d79;
+    --darkBlueColor: #162f57;
+    --goldColor: #e1d3b6;
+    --blueColor: #1771F1;
+    --grayColor: #939598;
+    --principalColor: #231F20;
+    --mediumGrayColor: #BCBEC0;
+    --lightGrayColor: #F1F2F2;
+}
+
+body, html {
+	scroll-behavior: smooth;
+}
+
+html, body, div, input, p, span, h1, h2, h3, h4, h5, h6, ul, li, header, section, select, article, button, a, textarea {
+	margin: 0;
+	padding: 0;
+	outline: none;
+	border: none;
+	background: transparent;
+	font-family: 'Barlow', sans-serif;
+	text-decoration: none;
+	transition: 0.5s ease all;
+}
+
+.fullContainer {
+	display: flex;
+	position: relative;
+	box-sizing: border-box;
+	overflow-x: hidden;
+	max-width: 2000px;
+	margin: 0 auto;
+	flex-direction: column;
+	scroll-behavior: smooth;
+	z-index:4;
+}
+
+.boxModel {
+	position: relative;
+	box-sizing: border-box;
+	display: block;
+}
+
+.boxModelFlex {
+	position: relative;
+	box-sizing: border-box;
+	display: flex;
+}
+
+.boxModelGrid {
+	position: relative;
+	box-sizing: border-box;
+	display: grid;
+}
+
+h1,h2,h3,h4,h5,h6,p,span,a {
+	color: var(--principalColor);
+	display: block;
+	box-sizing: border-box;
+	position: relative;
+}
+
+h1 {
+	position: relative;
+	box-sizing: border-box;
+	display: block;
+	font-size: 50px;
+}
+
+h2 {
+	position: relative;
+	box-sizing: border-box;
+	display: block;
+	font-size: 42px;
+}
+
+h3 {
+	position: relative;
+	box-sizing: border-box;
+	display: block;
+	font-size: 35px;
+}
+
+h4 {
+	position: relative;
+	box-sizing: border-box;
+	display: block;
+	font-size: 26px;
+}
+
+h5 {
+	position: relative;
+	box-sizing: border-box;
+	display: block;
+	font-size: 23px;
+}
+
+a, p {
+	position: relative;
+	box-sizing: border-box;
+	display: block;
+	font-size: 20px;
+}
+
+span {
+	position: relative;
+	box-sizing: border-box;
+	display: block;
+	font-size: 16px;
+}
+
+.aLink {
+	font-weight: var(--light);
+	cursor: pointer;
+	z-index: 2;
+}
+
+.aLink::before {
+	content: '';
+	width: calc(100% + 20px);
+	height: 0%;
+	background-color: var(--mediumGrayColor);
+	position: absolute;
+	bottom: -13%;
+	left: 50%;
+	transform: translateX(-50%);
+	transition: 0.3s cubic-bezier(0.77, 0, 0.175, 1) all;
+	z-index: -1;
+}
+
+.aLink:hover::before {
+	height: 120%;
+}
+
+p {
+	line-height: 1.4;
+}
+
+amp-img.contain img {
+   object-fit: contain;
+}
+
+amp-img.cover img {
+   object-fit: cover;
+}
+
+svg {
+	display: block;
+	box-sizing: border-box;
+	position: relative;	
+}
+
+input {
+	padding: 10px;
+	width: 100%;
+}
+
+input::placeholder,
+input {
+	font-size: 20px;
+	color: var(--principalColor);
+	font-weight: var(--medium);
+}
+
+
+
+
+
+
+.colors {
+	align-items: center;
+	justify-content: center;
+}
+
+
+
+
+
+
+.colors:nth-of-type(1) {
+	width: 200px;
+	height: 200px;
+	background-color: var(--redColor);
+}
+.colors:nth-of-type(2) {
+	width: 200px;
+	height: 200px;
+	background-color: var(--orangeColor);
+}
+.colors:nth-of-type(3) {
+	width: 200px;
+	height: 200px;
+	background-color: var(--yellowColor);
+}
+.colors:nth-of-type(4) {
+	width: 200px;
+	height: 200px;
+	background-color: var(--greenColor);
+}
+.colors:nth-of-type(5) {
+	width: 200px;
+	height: 200px;
+	background-color: var(--blueColor);
+}
+.colors:nth-of-type(6) {
+	width: 200px;
+	height: 200px;
+	background-color: var(--grayColor);
+}
+.colors:nth-of-type(7) {
+	width: 200px;
+	height: 200px;
+	background-color: var(--principalColor);
+}
+.colors:nth-of-type(8) {
+	width: 200px;
+	height: 200px;
+	background-color: var(--mediumGrayColor);
+}
+.colors:nth-of-type(9) {
+	width: 200px;
+	height: 200px;
+	background-color: var(--lightGrayColor);
+}
+
+.boxes {
+	flex-wrap: wrap;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
